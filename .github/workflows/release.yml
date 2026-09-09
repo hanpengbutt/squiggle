@@ -28,6 +28,9 @@ jobs:
           cache: 'pnpm'
           registry-url: 'https://registry.npmjs.org'
 
+      - name: Clean npmrc for OIDC
+        run: sed -i '/_authToken/d' ~/.npmrc || true
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
