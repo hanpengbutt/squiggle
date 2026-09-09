@@ -1,9 +1,10 @@
 {
   "extends": "@squiggle-line/typescript-config/react.json",
   "compilerOptions": {
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "types": ["@figma/plugin-typings"]
+    "types": ["@figma/plugin-typings"],
+    "paths": {
+      "@squiggle-line/core": ["../../packages/core/src/index.ts"]
+    }
   },
-  "include": ["src"]
+  "include": ["src", "../../packages/core/src"]
 }
