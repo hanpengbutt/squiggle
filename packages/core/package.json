@@ -1,8 +1,15 @@
 {
   "name": "@squiggle-line/core",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Zero-dependency engine for converting SVG paths into hand-drawn wobbly strokes",
-  "keywords": ["svg", "doodle", "hand-drawn", "squiggle", "wiggle", "figma"],
+  "keywords": [
+    "svg",
+    "doodle",
+    "hand-drawn",
+    "squiggle",
+    "wiggle",
+    "figma"
+  ],
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -11,7 +18,9 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
