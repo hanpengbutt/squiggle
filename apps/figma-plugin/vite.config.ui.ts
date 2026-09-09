@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), viteSingleFile()],
   resolve: {
     alias: {
-      '@squiggle/core': resolve(import.meta.dirname, '../../packages/core/src/index.ts'),
+      '@squiggle-line/core': resolve(import.meta.dirname, '../../packages/core/src/index.ts'),
     },
   },
   build: {

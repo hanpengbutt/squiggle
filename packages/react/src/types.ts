@@ -1,4 +1,4 @@
-import type { SquiggleParams } from '@squiggle/core';
+import type { SquiggleParams } from '@squiggle-line/core';
 import type { CSSProperties } from 'react';
 
 /** WobblyBox / WobblyShape 공통 스타일 props */

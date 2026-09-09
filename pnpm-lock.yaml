@@ -23,7 +23,7 @@ importers:
 
   apps/demo:
     dependencies:
-      '@squiggle/react':
+      '@squiggle-line/react':
         specifier: workspace:*
         version: link:../../packages/react
       react:
@@ -33,7 +33,7 @@ importers:
         specifier: 19.2.8
         version: 19.2.8(react@19.2.8)
     devDependencies:
-      '@squiggle/typescript-config':
+      '@squiggle-line/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/react':
@@ -51,7 +51,7 @@ importers:
 
   apps/figma-plugin:
     dependencies:
-      '@squiggle/core':
+      '@squiggle-line/core':
         specifier: workspace:*
         version: link:../../packages/core
       react:
@@ -64,10 +64,10 @@ importers:
       '@figma/plugin-typings':
         specifier: ^1.100.0
         version: 1.134.0
-      '@squiggle/eslint-config':
+      '@squiggle-line/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
-      '@squiggle/typescript-config':
+      '@squiggle-line/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/react':
@@ -91,10 +91,10 @@ importers:
 
   packages/core:
     devDependencies:
-      '@squiggle/eslint-config':
+      '@squiggle-line/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      '@squiggle/typescript-config':
+      '@squiggle-line/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
 
@@ -121,7 +121,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@squiggle/core':
+      '@squiggle-line/core':
         specifier: workspace:*
         version: link:../core
       react:
@@ -131,10 +131,10 @@ importers:
         specifier: '>=19.0.0'
         version: 19.2.8(react@19.2.8)
     devDependencies:
-      '@squiggle/eslint-config':
+      '@squiggle-line/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      '@squiggle/typescript-config':
+      '@squiggle-line/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/react':

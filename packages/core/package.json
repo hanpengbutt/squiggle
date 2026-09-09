@@ -1,5 +1,5 @@
 {
-  "name": "@squiggle/core",
+  "name": "@squiggle-line/core",
   "version": "0.1.0",
   "description": "Zero-dependency engine for converting SVG paths into hand-drawn wobbly strokes",
   "keywords": ["svg", "doodle", "hand-drawn", "squiggle", "wiggle", "figma"],
@@ -18,7 +18,7 @@
     "lint": "eslint src --max-warnings 0"
   },
   "devDependencies": {
-    "@squiggle/eslint-config": "workspace:*",
-    "@squiggle/typescript-config": "workspace:*"
+    "@squiggle-line/eslint-config": "workspace:*",
+    "@squiggle-line/typescript-config": "workspace:*"
   }
 }

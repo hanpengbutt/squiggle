@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import { applySquiggle } from '@squiggle/core';
-import type { SquiggleParams } from '@squiggle/core';
+import { applySquiggle } from '@squiggle-line/core';
+import type { SquiggleParams } from '@squiggle-line/core';
 
 /**
  * SVG path 문자열에 Squiggle 효과를 적용한 wobbly path를 반환하는 hook.

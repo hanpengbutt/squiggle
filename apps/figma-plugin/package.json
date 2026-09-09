@@ -1,5 +1,5 @@
 {
-  "name": "@squiggle/figma-plugin",
+  "name": "@squiggle-line/figma-plugin",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -10,14 +10,14 @@
     "lint": "eslint src --max-warnings 0"
   },
   "dependencies": {
-    "@squiggle/core": "workspace:*",
+    "@squiggle-line/core": "workspace:*",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
   "devDependencies": {
     "@figma/plugin-typings": "^1.100.0",
-    "@squiggle/eslint-config": "workspace:*",
-    "@squiggle/typescript-config": "workspace:*",
+    "@squiggle-line/eslint-config": "workspace:*",
+    "@squiggle-line/typescript-config": "workspace:*",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^6.0.0",

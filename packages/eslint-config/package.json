@@ -1,5 +1,5 @@
 {
-  "name": "@squiggle/eslint-config",
+  "name": "@squiggle-line/eslint-config",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",

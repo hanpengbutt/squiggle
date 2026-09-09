@@ -1,5 +1,5 @@
 {
-  "extends": "@squiggle/typescript-config/react.json",
+  "extends": "@squiggle-line/typescript-config/react.json",
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./src",

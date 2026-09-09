@@ -6,8 +6,8 @@ SVG 경로를 손으로 그린 것처럼 구불구불한 선(wobbly stroke)으�
 
 | Package | Description | Version |
 |---------|-------------|---------|
-| [`@squiggle/core`](./packages/core) | Zero-dependency 핵심 알고리즘 엔진 | ![npm](https://img.shields.io/npm/v/@squiggle/core) |
-| [`@squiggle/react`](./packages/react) | React 바인딩 (WobblyBox, WobblyShape, useSquigglePath) | ![npm](https://img.shields.io/npm/v/@squiggle/react) |
+| [`@squiggle-line/core`](./packages/core) | Zero-dependency 핵심 알고리즘 엔진 | ![npm](https://img.shields.io/npm/v/@squiggle-line/core) |
+| [`@squiggle-line/react`](./packages/react) | React 바인딩 (WobblyBox, WobblyShape, useSquigglePath) | ![npm](https://img.shields.io/npm/v/@squiggle-line/react) |
 
 ## Apps
 
@@ -17,10 +17,10 @@ SVG 경로를 손으로 그린 것처럼 구불구불한 선(wobbly stroke)으�
 
 ## Quick Start
 
-### @squiggle/core
+### @squiggle-line/core
 
 ```ts
-import { applySquiggle } from '@squiggle/core';
+import { applySquiggle } from '@squiggle-line/core';
 
 const wobblyPath = applySquiggle('M 0 0 L 100 0 L 100 100 L 0 100 Z', {
   frequency: 200,  // 굴곡 밀도 (10~500%)
@@ -30,10 +30,10 @@ const wobblyPath = applySquiggle('M 0 0 L 100 0 L 100 100 L 0 100 Z', {
 });
 ```
 
-### @squiggle/react
+### @squiggle-line/react
 
 ```tsx
-import { WobblyBox, WobblyShape, useSquigglePath } from '@squiggle/react';
+import { WobblyBox, WobblyShape, useSquigglePath } from '@squiggle-line/react';
 
 // 컨텐츠를 감싸는 wobbly border
 <WobblyBox frequency={200} wiggle={16} smoothen={74} stroke="#1a1a1a" borderRadius={8}>
@@ -62,8 +62,8 @@ pnpm dev
 pnpm build
 
 # 특정 패키지만 실행
-pnpm -F @squiggle/core dev
-pnpm -F @squiggle/figma-plugin dev
+pnpm -F @squiggle-line/core dev
+pnpm -F @squiggle-line/figma-plugin dev
 ```
 
 ## Release

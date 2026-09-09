@@ -7,8 +7,8 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@squiggle/react': resolve(import.meta.dirname, '../../packages/react/src/index.ts'),
-      '@squiggle/core': resolve(import.meta.dirname, '../../packages/core/src/index.ts'),
+      '@squiggle-line/react': resolve(import.meta.dirname, '../../packages/react/src/index.ts'),
+      '@squiggle-line/core': resolve(import.meta.dirname, '../../packages/core/src/index.ts'),
     },
   },
 });

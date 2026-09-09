@@ -1,5 +1,5 @@
 {
-  "name": "@squiggle/demo",
+  "name": "@squiggle-line/demo",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -9,12 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@squiggle/react": "workspace:*",
+    "@squiggle-line/react": "workspace:*",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "@squiggle/typescript-config": "workspace:*",
+    "@squiggle-line/typescript-config": "workspace:*",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^6.0.0",

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { WobblyShape } from '@squiggle/react';
+import { WobblyShape } from '@squiggle-line/react';
 import { SliderProp, ColorProp, FillProp, SelectProp, SectionTitle } from '../components/PropControl';
 
 const PRESETS: Record<string, { d: string; width: number; height: number }> = {

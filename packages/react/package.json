@@ -1,7 +1,7 @@
 {
-  "name": "@squiggle/react",
+  "name": "@squiggle-line/react",
   "version": "0.1.0",
-  "description": "React bindings for @squiggle/core — WobblyBox, WobblyShape components and hooks",
+  "description": "React bindings for @squiggle-line/core — WobblyBox, WobblyShape components and hooks",
   "keywords": ["react", "svg", "doodle", "hand-drawn", "squiggle", "wiggle"],
   "license": "MIT",
   "type": "module",
@@ -22,12 +22,12 @@
     "react-dom": ">=19.0.0"
   },
   "devDependencies": {
-    "@squiggle/eslint-config": "workspace:*",
-    "@squiggle/typescript-config": "workspace:*",
+    "@squiggle-line/eslint-config": "workspace:*",
+    "@squiggle-line/typescript-config": "workspace:*",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0"
   },
   "dependencies": {
-    "@squiggle/core": "workspace:*"
+    "@squiggle-line/core": "workspace:*"
   }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { WobblySpeechBubble } from '@squiggle/react';
+import { WobblySpeechBubble } from '@squiggle-line/react';
 import { SliderProp, ColorProp, FillProp, TextareaProp, SectionTitle } from '../components/PropControl';
 
 export function WobblySpeechBubbleDemo() {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { applySquiggle } from '@squiggle/core';
+import { applySquiggle } from '@squiggle-line/core';
 
 interface SelectionInfo {
   hasSelection: boolean;
@@ -195,13 +195,13 @@ export default function App() {
     if (tab === 'stroke') {
       if (!selection.pathData) return '// 피그마에서 Vector, Rectangle 또는 Frame 레이어를 선택하세요.';
       if (selection.isCustomPath) {
-        return `import { WobblyShape } from '@squiggle/react';\n\n<WobblyShape\n  d="${selection.pathData}"\n  frequency={${frequency}}\n  wiggle={${wiggle}}\n  smoothen={${smoothen}}\n  strokeWidth={${strokeWidth}}\n  seed={${seed}}\n  stroke="${strokeColor}"\n  fill="${fillColor}"\n  width={${Math.round(selection.width || 100)}}\n  height={${Math.round(selection.height || 100)}}\n/>`;
+        return `import { WobblyShape } from '@squiggle-line/react';\n\n<WobblyShape\n  d="${selection.pathData}"\n  frequency={${frequency}}\n  wiggle={${wiggle}}\n  smoothen={${smoothen}}\n  strokeWidth={${strokeWidth}}\n  seed={${seed}}\n  stroke="${strokeColor}"\n  fill="${fillColor}"\n  width={${Math.round(selection.width || 100)}}\n  height={${Math.round(selection.height || 100)}}\n/>`;
       } else {
         const radius = selection.cornerRadius ? Math.round(selection.cornerRadius) : 0;
-        return `import { WobblyBox } from '@squiggle/react';\n\n<WobblyBox\n  frequency={${frequency}}\n  wiggle={${wiggle}}\n  smoothen={${smoothen}}\n  strokeWidth={${strokeWidth}}\n  seed={${seed}}\n  stroke="${strokeColor}"\n  fill="${fillColor}"${radius > 0 ? `\n  borderRadius={${radius}}` : ''}\n>\n  {/* 여기에 컨텐츠가 들어갑니다 */}\n</WobblyBox>`;
+        return `import { WobblyBox } from '@squiggle-line/react';\n\n<WobblyBox\n  frequency={${frequency}}\n  wiggle={${wiggle}}\n  smoothen={${smoothen}}\n  strokeWidth={${strokeWidth}}\n  seed={${seed}}\n  stroke="${strokeColor}"\n  fill="${fillColor}"${radius > 0 ? `\n  borderRadius={${radius}}` : ''}\n>\n  {/* 여기에 컨텐츠가 들어갑니다 */}\n</WobblyBox>`;
       }
     } else {
-      return `import { WobblySpeechBubble } from '@squiggle/react';\n\n<WobblySpeechBubble\n  frequency={${frequency}}\n  wiggle={${wiggle}}\n  smoothen={${smoothen}}\n  strokeWidth={${strokeWidth}}\n  seed={${seed}}\n  stroke="${strokeColor}"\n  fill="${fillColor}"\n  padding={${bubblePadding}}\n  borderRadius={${bubbleBorderRadius}}\n  tailWidth={${bubbleTailWidth}}\n  tailHeight={${bubbleTailHeight}}\n  tailType="${bubbleTailType}"\n>\n  {/* 여기에 텍스트가 들어갑니다 */}\n</WobblySpeechBubble>`;
+      return `import { WobblySpeechBubble } from '@squiggle-line/react';\n\n<WobblySpeechBubble\n  frequency={${frequency}}\n  wiggle={${wiggle}}\n  smoothen={${smoothen}}\n  strokeWidth={${strokeWidth}}\n  seed={${seed}}\n  stroke="${strokeColor}"\n  fill="${fillColor}"\n  padding={${bubblePadding}}\n  borderRadius={${bubbleBorderRadius}}\n  tailWidth={${bubbleTailWidth}}\n  tailHeight={${bubbleTailHeight}}\n  tailType="${bubbleTailType}"\n>\n  {/* 여기에 텍스트가 들어갑니다 */}\n</WobblySpeechBubble>`;
     }
   }, [tab, selection, frequency, wiggle, smoothen, strokeWidth, seed, strokeColor, fillColor, bubblePadding, bubbleBorderRadius, bubbleTailWidth, bubbleTailHeight, bubbleTailType]);
 

@@ -1,3 +1,3 @@
-import baseConfig from "@squiggle/eslint-config/base";
+import baseConfig from "@squiggle-line/eslint-config/base";
 
 export default baseConfig;

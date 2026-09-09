@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { WobblyBox } from '@squiggle/react';
+import { WobblyBox } from '@squiggle-line/react';
 import { SliderProp, ColorProp, FillProp, TextareaProp, SectionTitle } from '../components/PropControl';
 
 export function WobblyBoxDemo() {
