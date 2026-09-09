@@ -17,6 +17,7 @@ export function useSquigglePath(pathData: string, params: SquiggleParams): strin
     } catch {
       return pathData;
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     pathData,
     params.frequency,

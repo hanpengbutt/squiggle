@@ -1,4 +1,4 @@
-import type { Point, BezierSegment } from './types.js';
+import type { BezierSegment } from './types.js';
 
 const PRECISION = 3; // 소수점 자리수
 

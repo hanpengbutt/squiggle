@@ -4,7 +4,7 @@ import type { Point, BezierSegment } from './types.js';
  * 점 배열을 Catmull-Rom spline → Cubic Bezier 세그먼트로 변환한다.
  * 꺾인 선을 매끄러운 SVG path 곡선으로 렌더링하기 위한 필수 단계.
  */
-export function smoothPoints(points: Point[], smoothenValue = 74): BezierSegment[] {
+export function smoothPoints(points: Point[], _smoothenValue = 74): BezierSegment[] {
   const n = points.length;
   if (n === 0) return [];
 

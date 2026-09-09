@@ -6,7 +6,7 @@ import baseConfig from "./base.js";
 const config = [
   ...baseConfig,
   {
-    files: ["**/*.tsx"],
+    files: ["**/*.ts", "**/*.tsx"],
     plugins: {
       react: reactPlugin,
       "react-hooks": reactHooksPlugin,

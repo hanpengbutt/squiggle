@@ -113,7 +113,7 @@ function getCornerDamping(points: Point[], i: number): number {
  * Wiggle 적용 (Seeded noise + box-scale amplitude + Corner Protection)
  */
 export function applyWiggle(points: Point[], params: SquiggleParams): Point[] {
-  const { frequency, wiggle, smoothen, strokeWidth = 10, seed = 42 } = params;
+  const { frequency, wiggle, smoothen, seed = 42 } = params;
 
   if (points.length < 2) return points;
 
