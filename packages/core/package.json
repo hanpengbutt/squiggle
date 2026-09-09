@@ -29,5 +29,8 @@
   "devDependencies": {
     "@squiggle-line/eslint-config": "workspace:*",
     "@squiggle-line/typescript-config": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
